@@ -5,6 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* ESTILOS DEL HEADER */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -35,10 +38,24 @@ header > nav > ul{
     align-items: center;
 }
 
+
+/* ESTILOS GENERAL */
+
+p{
+    padding: 30px;
+}
+
+h1, h3{
+    text-align: center;
+    margin: 5px;
+}
+
 li, a{
     list-style: none;
     text-decoration: none;
 }
+
+/* ESTILOS DE LA CLASE ROW */
 
 .row{
     display: flex;
@@ -51,22 +68,18 @@ li, a{
 
 }
 
-p{
-    padding: 30px;
-}
 
-h1, h3{
-    text-align: center;
-    margin: 5px;
-}
-
+/* ESTILOS DE LA MAIN  */
 main{
     background-color: rgb(46, 46, 243);
     border-radius: 10px;
     padding: 30px;
     flex: 60%;
-    background: linear-gradient(120deg, #f50000e1, #fdcf00);
+    background: #f50000e1;
 }
+
+
+/* ESTLOS DE LOS OBJETOS CON LA CLASE .CLASE-PERSONAJES */
 
 .clase-personajes{
     display: flex;
@@ -76,32 +89,39 @@ main{
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    transition: all 0.5s;
 }
 
 .clase-personajes img{
     width: 200px;
-    transition: all 0.5seconds;
 }
 
 .clase-personajes img:hover{
     transition: all 0.5s;
     width: 220px;
-    float: right;
     filter: drop-shadow(8px 8px 4px #4098eb);
 }
 
 .clase-personajes > p {
-    width: 50%;
+    width: 100%;
 }
+
+
+/* ESTILOS DEL ASIDE */
 
 aside{
     background: linear-gradient(120deg, #ff0101ec, #fda400);
     border-radius: 10px;
     flex:30px;
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 10px;
+    text-align: center;
 }
+aside img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* ESTILOS DE LAS SECCIONES Y ARTICULOS */
 
 section, article{
     background: linear-gradient(120deg, #ff6600, #ffd651);
@@ -110,6 +130,9 @@ section, article{
     margin-bottom: 30px;
 }
 
+
+/* ESTILOS DEL FOOTER */
+
 footer{
     background-color: rgb(212, 114, 175);
     height: 50px;
@@ -117,6 +140,37 @@ footer{
 }
 
 
-article{
-    display: block;
+/* ESTILOS DE LA TABLA DE LOS TIPOS DE BABOSAS */
+
+table {
+   width: 100%;
+    text-align: center;
+    background: linear-gradient(120deg, #78b4ec, #fdad00);
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+table img{
+    width: 50%;
+}
+
+th{
+    width: 32.5%;
+}
+td{
+    border: 1px solid #fdd3d3;
+}
+
+table img:hover{
+    transition: all 0.5s;
+    filter: drop-shadow(8px 8px 4px #4098eb);
+}
+
+@media screen and (max-width: 768px) {
+    .clase-personajes{
+        display: block;
+    }
+    aside{
+        margin-left: 0;
+    }
 }
