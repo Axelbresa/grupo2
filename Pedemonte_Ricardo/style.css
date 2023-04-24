@@ -1,16 +1,17 @@
 /* Estilos generales de la página */
 body {
-	margin: 0;
-	padding: 0;
+	margin: 25px;
+	padding: 10px;
 	font-family: Arial, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.5;
-	height: 400px;
 }
-
+p{
+	text-align: justify;
+}
 /* Estilos del encabezado */
 header {
-	background-color: #f0f0f0;
+	background-color: #635050;
 	padding: 20px;
 }
 
@@ -31,9 +32,12 @@ section {
 
 /* Estilos del pie de página */
 footer {
-	background-color: #333;
+	background-color: #423c3c;
 	color: #fff;
 	padding: 20px;
+	text-align: center;
+}
+footer p{
 	text-align: center;
 }
 
@@ -73,34 +77,4 @@ nav ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.nav_link{
-	margin: 40px;
-	color: #fff;
-	text-decoration: none;
-	font-size: 1.3rem;
-}
-
-.show{
-	background-color: indigo;
-	width: 100%;
-	height: 260px;
-	display: grid;
-	place-items: center;
-
-	animation: show .5s 1s backwards reverse;
-}
-
-.title{
-	animation: show .3s 1.5s backwards reverse;
-}
-
-@keyframes show {
-	from{
-		clip-path: polygon(0 0, 100% 100%, 0% 100%);
-	}
-	to{
-		clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-	}
 }
