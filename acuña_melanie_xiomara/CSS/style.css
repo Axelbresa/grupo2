@@ -1,0 +1,80 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navegador {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.navegador:hover{
+    color: aqua;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.logo img{
+    height: 50px;
+}
+
+section{
+    display: flex;
+    margin: 10px;
+}
+
+.card{
+    margin: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+main{
+    display: flex;
+}
+
+aside{
+    margin: 20px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer h3{
+    text-align: center;
+}
+
+.footerSection{
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+.mediosPago{
+    width: 100%;
+    color: white;
+}
+.mediosPago a{
+    text-decoration: none;
+}
+
+.mediosPago div{
+    display: flex;
+}

@@ -1,0 +1,15 @@
+header {
+    background-color: gainsboro;
+}
+
+header h1 {
+    color: red;
+}
+
+footer {
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+}
