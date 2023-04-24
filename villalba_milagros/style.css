@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+.header_title{
+    color: red;
+}
+article>p{
+    color: azure;
+}
+article>h1{
+    color: red;
+}
+footer{
+    background-color: white;
+    text-align: center;
+}
