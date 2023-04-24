@@ -17,7 +17,7 @@ header{
     left: 0;
     width: 100%;
     position: fixed;
-    background-color: aliceblue;
+    background: linear-gradient(120deg, #535353, #eeeeee);
     z-index: 1;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -42,7 +42,11 @@ header > nav > ul{
 /* ESTILOS GENERAL */
 
 p{
-    padding: 30px;
+    padding: 18px;
+}
+
+.video{
+    text-align: center;
 }
 
 h1, h3{
@@ -53,6 +57,10 @@ h1, h3{
 li, a{
     list-style: none;
     text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: wheat;
 }
 
 /* ESTILOS DE LA CLASE ROW */
@@ -75,7 +83,7 @@ main{
     border-radius: 10px;
     padding: 30px;
     flex: 60%;
-    background: #f50000e1;
+    background: #f50000ef;
 }
 
 
@@ -109,12 +117,13 @@ main{
 /* ESTILOS DEL ASIDE */
 
 aside{
-    background: linear-gradient(120deg, #ff0101ec, #fda400);
+    background: #f50000e1;
     border-radius: 10px;
     flex:30px;
     margin-left: 5px;
     padding: 10px;
     text-align: center;
+
 }
 aside img{
     border-radius: 20px;
@@ -123,22 +132,12 @@ aside img{
 
 /* ESTILOS DE LAS SECCIONES Y ARTICULOS */
 
-section, article{
+section{
     background: linear-gradient(120deg, #ff6600, #ffd651);
     border-radius: 10px;
     padding: 5px;
     margin-bottom: 30px;
 }
-
-
-/* ESTILOS DEL FOOTER */
-
-footer{
-    background-color: rgb(212, 114, 175);
-    height: 50px;
-    padding: 10px;
-}
-
 
 /* ESTILOS DE LA TABLA DE LOS TIPOS DE BABOSAS */
 
@@ -165,6 +164,19 @@ table img:hover{
     transition: all 0.5s;
     filter: drop-shadow(8px 8px 4px #4098eb);
 }
+
+/* ESTILOS DEL FOOTER */
+
+footer{
+    background: linear-gradient(120deg, #535353, #eeeeee);
+    padding: 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
 
 @media screen and (max-width: 768px) {
     .clase-personajes{
