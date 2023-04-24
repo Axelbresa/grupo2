@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ESTILOS DEL HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(120deg, #535353, #eeeeee);
+    z-index: 1;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header > nav {
+    border-radius: 10px;
+    width: 500px;
+    height: 30px;
+}
+
+header > nav > ul{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* ESTILOS GENERAL */
+
+p{
+    padding: 18px;
+}
+
+.video{
+    text-align: center;
+}
+
+h1, h3{
+    text-align: center;
+    margin: 5px;
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: wheat;
+}
+
+/* ESTILOS DE LA CLASE ROW */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url("./personajes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 98px;
+
+}
+
+
+/* ESTILOS DE LA MAIN  */
+main{
+    background-color: rgb(46, 46, 243);
+    border-radius: 10px;
+    padding: 30px;
+    flex: 60%;
+    background: #f50000ef;
+}
+
+
+/* ESTLOS DE LOS OBJETOS CON LA CLASE .CLASE-PERSONAJES */
+
+.clase-personajes{
+    display: flex;
+    padding: 5px;
+    background: linear-gradient(120deg, #78b4ec, #fdad00);
+    margin: 30px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.clase-personajes img{
+    width: 200px;
+}
+
+.clase-personajes img:hover{
+    transition: all 0.5s;
+    width: 220px;
+    filter: drop-shadow(8px 8px 4px #4098eb);
+}
+
+.clase-personajes > p {
+    width: 100%;
+}
+
+
+/* ESTILOS DEL ASIDE */
+
+aside{
+    background: #f50000e1;
+    border-radius: 10px;
+    flex:30px;
+    margin-left: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+aside img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* ESTILOS DE LAS SECCIONES Y ARTICULOS */
+
+section{
+    background: linear-gradient(120deg, #ff6600, #ffd651);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+/* ESTILOS DE LA TABLA DE LOS TIPOS DE BABOSAS */
+
+table {
+   width: 100%;
+    text-align: center;
+    background: linear-gradient(120deg, #78b4ec, #fdad00);
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+table img{
+    width: 50%;
+}
+
+th{
+    width: 32.5%;
+}
+td{
+    border: 1px solid #fdd3d3;
+}
+
+table img:hover{
+    transition: all 0.5s;
+    filter: drop-shadow(8px 8px 4px #4098eb);
+}
+
+/* ESTILOS DEL FOOTER */
+
+footer{
+    background: linear-gradient(120deg, #535353, #eeeeee);
+    padding: 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .clase-personajes{
+        display: block;
+    }
+    aside{
+        margin-left: 0;
+    }
+}
